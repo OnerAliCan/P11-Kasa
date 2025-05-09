@@ -1,0 +1,62 @@
+.thumbnail-section {
+  display: flex;
+}
+.thumbnail-section .thumbnail {
+  background-color: #ff6060;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  position: relative;
+}
+.thumbnail-section .thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.thumbnail-section .thumbnail .thumbnail-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .thumbnail-section {
+    flex-wrap: wrap;
+    gap: 50px 60px;
+    padding: 56px 50px 43px 50px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .thumbnail-section .thumbnail {
+    width: 100%;
+    max-width: 340px;
+    height: 340px;
+  }
+  .thumbnail-section .thumbnail .thumbnail-title {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .thumbnail-section {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 27px;
+  }
+  .thumbnail-section .thumbnail {
+    width: 100%;
+    height: 255px;
+  }
+  .thumbnail-section .thumbnail .thumbnail-title {
+    margin-bottom: 15px;
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=thumbnail.css.map */

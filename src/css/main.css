@@ -1,0 +1,25 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+body .content {
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  body .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  body .content {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+body .content main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=main.css.map */

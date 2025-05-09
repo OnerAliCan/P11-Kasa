@@ -1,0 +1,25 @@
+.about-banner {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(70%);
+}
+
+@media (min-width: 768px) {
+  .about-banner {
+    height: 223px;
+    border-radius: 25px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .about-banner {
+    height: 111px;
+    border-radius: 10px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+}
+
+/*# sourceMappingURL=aboutbanner.css.map */

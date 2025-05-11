@@ -20,7 +20,7 @@ const Dropdown = ({ title, description }) => {
       </div>
 
       <div className={`dropdown-description ${isOpen ? 'visible' : ''}`}>
-        <p className="dropdown-content">{description}</p>
+        <div className="dropdown-content">{description}</div>
       </div>
     </div>
   )

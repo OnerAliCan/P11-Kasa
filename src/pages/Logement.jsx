@@ -3,6 +3,8 @@ import data from '../../logements.json'
 import Dropdown from '../components/Dropdown'
 import '../styles/logement.scss'
 import Tag from '../components/Tag'
+import Rating from '../components/Rating'
+import Slider from '../components/Slider'
 
 export default function Logement() {
   const { id } = useParams()
@@ -14,12 +16,7 @@ export default function Logement() {
 
   return (
     <div className="logement-main">
-      <img
-        src={logement.cover}
-        alt={logement.title}
-        className="logement-slider"
-      />
-
+      <Slider logement={logement} />
       <div className="logement-informations">
         <div className="logement-title-location">
           <h1 className="logement-title">{logement.title}</h1>
@@ -37,7 +34,7 @@ export default function Logement() {
             <img src={logement.host.picture} alt="" />
           </div>
 
-          <span>{logement.rating}</span>
+          <Rating rating={logement.rating} />
         </div>
       </div>
 

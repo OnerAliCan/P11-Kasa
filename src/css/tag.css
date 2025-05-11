@@ -1,35 +1,23 @@
 .tag {
   display: flex;
-  background-color: #FF6060;
-  height: 25px;
-  width: 115px;
+  background-color: #ff6060;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
-}
-
-.tag {
-  display: flex;
-  background-color: #FF6060;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  font-weight: 700;
+  white-space: nowrap;
+  padding: 1px 5px;
 }
 @media (max-width: 768px) {
   .tag {
     height: 18px;
-    width: 84px;
     font-size: 10px;
   }
 }
 @media (min-width: 769px) {
   .tag {
     height: 25px;
-    width: 115px;
     font-size: 14px;
   }
 }

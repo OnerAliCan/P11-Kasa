@@ -1,7 +1,6 @@
 .tag {
   display: flex;
   background-color: #ff6060;
-  border-radius: 10px;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -11,13 +10,13 @@
 
   @media (max-width: 768px) {
     height: 18px;
-    // width: 84px;
     font-size: 10px;
+    border-radius: 5px;
   }
 
   @media (min-width: 769px) {
     height: 25px;
-    // width: 115px;
     font-size: 14px;
+    border-radius: 10px;
   }
 }

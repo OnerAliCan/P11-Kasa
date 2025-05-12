@@ -8,7 +8,7 @@ export default function Rating({ rating }) {
   const blankStars = Array.from({ length: totalStars - rating })
 
   return (
-    <span className="rating-container">
+    <div className="rating-container">
       {redStars.map((_, index) => (
         <img
           key={`red-${index}`}
@@ -25,6 +25,6 @@ export default function Rating({ rating }) {
           className="rating-star"
         />
       ))}
-    </span>
+    </div>
   )
 }

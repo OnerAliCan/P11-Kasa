@@ -27,7 +27,8 @@
 
 @media (min-width: 768px) {
   .thumbnail-section {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 50px 60px;
     padding: 56px 50px 43px 50px;
     background-color: #f6f6f6;
@@ -36,14 +37,8 @@
     margin-bottom: 50px;
 
     .thumbnail {
-      width: 100%;
-      max-width: 340px;
       height: 340px;
-
-      .thumbnail-title {
-        margin-bottom: 20px;
-        width: 200px;
-      }
+      max-width: 100%;
     }
   }
 }
@@ -58,7 +53,7 @@
       height: 255px;
       .thumbnail-title {
         margin-bottom: 15px;
-        width: 100px;
+        // width: 100px;
       }
     }
   }

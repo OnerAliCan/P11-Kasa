@@ -2,8 +2,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0;
-}
-body .content {
   min-height: 100vh;
 }
 @media (max-width: 768px) {

@@ -8,13 +8,10 @@
   align-items: center;
   color: black;
 }
-.header .navbar a {
+.header .navbar .navbar-link {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-}
-.header .navbar a:hover {
-  text-decoration: underline;
 }
 @media (min-width: 768px) {
   .header {
@@ -23,8 +20,11 @@
   .header .navbar {
     gap: 57px;
   }
-  .header .navbar a {
+  .header .navbar .navbar-link {
     font-size: 24px;
+  }
+  .header .navbar .navbar-link:hover {
+    text-decoration: underline;
   }
 }
 @media (max-width: 768px) {
@@ -39,8 +39,11 @@
   .header .navbar {
     gap: 26px;
   }
-  .header .navbar a {
+  .header .navbar .navbar-link {
     font-size: 12px;
+  }
+  .header .navbar .navbar-link:active {
+    text-decoration: underline;
   }
 }
 

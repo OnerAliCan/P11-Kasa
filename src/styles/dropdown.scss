@@ -12,6 +12,7 @@
       border-radius: 5px;
 
       .dropdown-arrow {
+        cursor: pointer;
         transition: transform 0.3s ease;
         &.rotate {
           transform: rotate(180deg);
